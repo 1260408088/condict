@@ -21,6 +21,7 @@
   font-size: 16px;
   margin-left: 15px;
   color: rgba(0,0,0,.3);
+  text-decoration: none;
 }
 
 .header-right li a:hover{
@@ -31,4 +32,8 @@
 
 .user-img{
   height: 26px;
+}
+
+div ul li a.head-select{
+  color: #5cb85c;
 }

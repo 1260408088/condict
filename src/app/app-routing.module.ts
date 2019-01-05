@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import {HomeComponent} from './home/home.component';
-
+import {PersonalModule} from './personal/personal.module';
 const routes: Routes = [
   /*{
     path: '',
@@ -11,6 +10,14 @@ const routes: Routes = [
   {
     path: 'home',
     loadChildren: './home/home.module#HomeModule'
+  },
+  {
+    path: 'setting',
+    loadChildren: './seting/setting.module#SettingModule'
+  },
+  {
+    path: 'personal',
+    loadChildren: './personal/personal.module#PersonalModule'
   }
 ];
 
