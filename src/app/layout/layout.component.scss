@@ -2,19 +2,23 @@
   font-family: titillium web,sans-serif;
   font-size: 1.5rem;
   padding-top: 1.5rem;
-  margin-right: 2rem;
   color: #5cb85c;
   line-height: 60px;
-  margin-left: 15px;
 }
 .header-top{
   height: 60px;
 }
-
+.halest{
+  float: right;
+}
+.header-right{
+  display: inline-block;
+}
 .header-right ul li{
   list-style: none;
   float: left;
   line-height: 60px;
+  list-style: none;
 }
 
 .header-right li a{
@@ -36,4 +40,9 @@
 
 div ul li a.head-select{
   color: #5cb85c;
+}
+
+.title{
+  float: right;
+  text-align: right;
 }

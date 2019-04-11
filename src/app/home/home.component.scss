@@ -6,3 +6,24 @@
   float: left;
   margin-left: 15px;
 }
+.banner{
+  height: 163px;
+  background-color: #5cb85c;
+}
+
+.banner h1{
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0,0,0,.3);
+  font-weight: 700!important;
+  font-size: 3.5rem;
+  color: #ffffff;
+  padding-top: 20px;
+}
+
+.banner p{
+  text-align: center;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 300!important;
+  margin-top: -36px;
+}

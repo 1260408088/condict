@@ -1,11 +1,12 @@
 <div nz-row>
   <div nz-row nzType="flex" nzJustify="center" class="header-top">
-    <div nz-col nzSpan="4">
+    <div nz-col nzSpan="2" class="title">
       <a class="tag">condict</a>
     </div>
-    <div nz-col nzOffset="6" nzSpan="7" class="header-right">
-        <ul>
-          <li><a routerLink="/home" routerLinkActive="head-select" [routerLinkActiveOptions]="{exact:true}">Home</a></li>
+    <!--登陆状态下的选项-->
+    <div nz-col nzOffset="7" nzSpan="7" class="header-right">
+      <ul>
+        <div *ngIf="false" class="halest">
           <li>
             <a routerLink='/home/article' routerLinkActive="head-select" [routerLinkActiveOptions]="{exact:true}">
               <i nz-icon type="file-markdown" theme="outline"></i> New Article
@@ -13,7 +14,7 @@
           </li>
           <li>
             <a routerLink="/setting" routerLinkActive="head-select" [routerLinkActiveOptions]="{exact:true}">
-                <i nz-icon type="setting" theme="outline"></i> Setting
+              <i nz-icon type="setting" theme="outline"></i> Setting
             </a>
           </li>
           <li>
@@ -21,7 +22,27 @@
               <img class="user-img" src="//www.baidu.com/img/bd_logo1.png?where=super"/>Kingning
             </a>
           </li>
-        </ul>
+        </div>
+
+        <div class="halest">
+          <!--未登录状态下的选项-->
+          <div *ngIf="true" class="halest" nz-col nzSpan="" nzType="flex" nzJustify="end">
+            <li>
+              <a routerLink='/login' routerLinkActive="head-select" [routerLinkActiveOptions]="{exact:true}">
+                Sing in
+              </a>
+            </li>
+            <li>
+              <a routerLink="/register" routerLinkActive="head-select" [routerLinkActiveOptions]="{exact:true}">
+                Sing up
+              </a>
+            </li>
+          </div>
+          <li>
+            <a routerLink="/home" routerLinkActive="head-select" [routerLinkActiveOptions]="{exact:true}">Home</a>
+          </li>
+        </div>
+      </ul>
     </div>
   </div>
 </div>

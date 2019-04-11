@@ -1,12 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import {PersonalModule} from './personal/personal.module';
 const routes: Routes = [
-  /*{
+  {
     path: '',
-    component: HomeComponent
-    // loadChildren: './home/home.module#HomeModule'
-  },*/
+    redirectTo: '/home',
+    pathMatch: 'full'
+  },
   {
     path: 'home',
     loadChildren: './home/home.module#HomeModule'
@@ -18,6 +17,14 @@ const routes: Routes = [
   {
     path: 'personal',
     loadChildren: './personal/personal.module#PersonalModule'
+  },
+  {
+    path: 'login',
+    loadChildren: './login/login.module#LoginModule'
+  },
+  {
+    path: 'register',
+    loadChildren: './register/register.module#RegisterModule'
   }
 ];
 
